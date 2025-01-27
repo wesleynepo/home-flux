@@ -1,0 +1,14 @@
+---
+apiVersion: helm.cattle.io/v1
+kind: HelmChartConfig
+metadata:
+  name: traefik
+  namespace: kube-system
+spec:
+  valuesContent: |-
+    ports:
+      grafana:
+        port: 3000 
+        expose: true
+        exposedPort: 3000 
+        protocol: TCP
