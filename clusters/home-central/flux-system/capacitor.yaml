@@ -35,7 +35,7 @@ metadata:
 spec:
   valuesContent: |-
     ports:
-      ssh: 
+      capacitor: 
         port: 9000 
         expose: true
         exposedPort: 9000 
