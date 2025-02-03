@@ -30,8 +30,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: capacitor-service
-  namespace: flux-system
+  name: capacitor
 spec:
   selector:
     app.kubernetes.io/instance: capacitor
@@ -39,6 +38,5 @@ spec:
   ports:
     - protocol: TCP
       port: 9000 
-      nodePort: 30001 
       targetPort: 9000 
   type: LoadBalancer
