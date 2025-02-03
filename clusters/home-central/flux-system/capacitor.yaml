@@ -27,20 +27,6 @@ spec:
     kind: OCIRepository
     name: capacitor
 ---
-apiVersion: helm.cattle.io/v1
-kind: HelmChartConfig
-metadata:
-  name: traefik
-  namespace: kube-system
-spec:
-  valuesContent: |-
-    ports:
-      capacitor: 
-        port: 9000 
-        expose: true
-        exposedPort: 9000 
----
----
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
