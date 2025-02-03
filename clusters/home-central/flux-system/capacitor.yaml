@@ -50,6 +50,7 @@ metadata:
 spec:
   rules:
     - http:
+        host: 192.168.15.13
         paths:
           - pathType: Prefix
             path: /
