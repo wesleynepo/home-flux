@@ -53,7 +53,7 @@ spec:
         host: 192.168.15.13
         paths:
           - pathType: Prefix
-            path: /
+            path: /capacitor
             backend:
               service:
                 name: capacitor
