@@ -50,10 +50,10 @@ metadata:
 spec:
   rules:
     - http:
-        host: 192.168.15.13
+        host: capacitor.svc.local 
         paths:
           - pathType: Prefix
-            path: /capacitor
+            path: /
             backend:
               service:
                 name: capacitor
