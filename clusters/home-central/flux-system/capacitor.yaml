@@ -65,11 +65,22 @@ spec:
     - http:
         paths:
           - pathType: Prefix
-            path: /
+            path: /capacitor
             backend:
               service:
                 name: capacitor
                 port:
                   number: 9000
 ---
-
+apiVersion: helm.cattle.io/v1
+kind: HelmChartConfig
+metadata:
+  name: capacitor 
+  namespace: kube-system
+spec:
+  valuesContent: |-
+    ports:
+      web:
+        exposedPort: 1234
+      websecure:
+        exposedPort: 5555
