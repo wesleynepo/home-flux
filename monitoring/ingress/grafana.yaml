@@ -1,7 +1,7 @@
 apiVersion: traefik.io/v1alpha1
 kind: IngressRoute
 metadata:
-  name: capacitor-ingress
+  name: grafana-ingress
   namespace: flux-system
 spec:
   entryPoints:
