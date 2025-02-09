@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: capacitor-ingress
+  namespace: flux-system
+spec:
+  rules:
+    - http:
+        host: grafana.svc.local 
+        paths:
+          - pathType: Prefix
+            path: /
+            backend:
+              service:
+                name: grafana 
+                port:
+                  number: 3000
