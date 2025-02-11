@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myspeed 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myspeed 
+  template:
+    metadata:
+      labels:
+        app: myspeed 
+    spec:
+      containers:
+        - name: myspeed 
+          image: germannewsmaker/myspeed 
+          imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi 
+            limits:
+              cpu: 200m
+              memory: 256Mi 
+          ports:
+            - containerPort: 5126 
+              protocol: TCP
