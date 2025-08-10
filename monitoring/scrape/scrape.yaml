@@ -12,9 +12,3 @@ spec:
     - 192.168.15.15:9100 
     labels:
       instance: 'rpi-home'
-      device_type: 'raspberry-pi'
-      environment: 'home'
-      location: 'external'
-  metricsPath: /metrics
-  scrapeInterval: 30s
-  scheme: HTTP 
