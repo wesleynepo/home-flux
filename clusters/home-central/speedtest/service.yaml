@@ -24,7 +24,7 @@ spec:
     - web
   routes:
     - kind: Rule
-      match: Host(`speed.svc.local`)
+      match: Host(`speed.k8s.home`)
       services:
         - kind: Service
           name: myspeed

@@ -8,7 +8,7 @@ spec:
     - web
   routes:
     - kind: Rule
-      match: Host(`grafana.svc.local`)
+      match: Host(`grafana.k8s.home`)
       services:
         - kind: Service
           name: kube-prometheus-stack-grafana 

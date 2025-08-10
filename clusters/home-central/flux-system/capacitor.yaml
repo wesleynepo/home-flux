@@ -52,7 +52,7 @@ spec:
     - web
   routes:
     - kind: Rule
-      match: Host(`capacitor.svc.local`)
+      match: Host(`capacitor.k8s.home`)
       services:
         - kind: Service
           name: capacitor 
