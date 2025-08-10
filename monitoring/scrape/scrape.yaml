@@ -4,7 +4,7 @@ metadata:
   name: rpi-static-config 
   namespace: monitoring 
   labels:
-    prometheus: prometheus 
+    release: kube-prometheus-stack 
 spec:
   staticConfigs:
     - labels:
