@@ -1,14 +1,13 @@
 apiVersion: monitoring.coreos.com/v1alpha1
 kind: ScrapeConfig
 metadata:
-  name: prometheus-scrapeconfig-rpi
-  namespace: monitoring
+  name: rpi-static-config 
+  namespace: monitoring 
   labels:
-    prometheus: kube-prometheus-prometheus
-    role: scrape-config
+    prometheus: prometheus 
 spec:
   staticConfigs:
-  - targets: 
-    - 192.168.15.15:9100 
-    labels:
-      instance: 'rpi-home'
+    - labels:
+        job: rpi
+      targets:
+        - 192.168.15.15:9100
