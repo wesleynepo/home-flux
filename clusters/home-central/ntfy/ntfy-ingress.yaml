@@ -12,3 +12,9 @@ spec:
         - kind: Service
           name: ntfy-svc 
           port: 80 
+    - kind: Rule
+      match: Host(`wesley.tail17faaa.ts.net`)
+      services:
+        - kind: Service
+          name: ntfy-svc 
+          port: 80 
