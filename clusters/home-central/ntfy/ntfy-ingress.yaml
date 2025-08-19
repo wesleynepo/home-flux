@@ -12,9 +12,3 @@ spec:
         - kind: Service
           name: ntfy-svc 
           port: 80 
-    - kind: Rule
-      match: Host(*)
-      services:
-        - kind: Service
-          name: ntfy-svc 
-          port: 8080 
