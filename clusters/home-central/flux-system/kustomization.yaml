@@ -5,5 +5,4 @@ resources:
   - gotk-sync.yaml
   - capacitor.yaml
   - metallb-crds.yaml
-  - ../network
 

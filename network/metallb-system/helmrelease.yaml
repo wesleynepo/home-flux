@@ -4,6 +4,8 @@ metadata:
   name: metallb
   namespace: metallb-system
 spec:
+  dependsOn:
+    - name: metallb-crds
   interval: 15m
   chart:
     spec:
