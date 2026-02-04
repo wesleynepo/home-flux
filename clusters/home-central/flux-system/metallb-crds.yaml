@@ -2,7 +2,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: metallb
+  name: metallb-crds
   namespace: flux-system
 spec:
   interval: 1h
@@ -19,6 +19,6 @@ spec:
   interval: 10m
   sourceRef:
     kind: GitRepository
-    name: metallb
+    name: metallb-crds
   path: ./config/crd
   prune: true
